@@ -106,24 +106,24 @@ export function ContactForm({ className, currentEmail }: Props) {
         //     currentEmail,
         // });
 
-        const { success, message } = ["true",false]
-        if (success) {
-            setSent(true);
-            dispatch({
-                type: ActionTypes.RESET_STATE,
-                payload: initialInputState,
-            });
-        }
+        // const { success, message } = ["true",false]
+        // if (success) {
+        //     setSent(true);
+        //     dispatch({
+        //         type: ActionTypes.RESET_STATE,
+        //         payload: initialInputState,
+        //     });
+        // }
 
-        if (message) {
-            dispatch({
-                type: ActionTypes.RESET_STATE,
-                payload: {
-                    loading: false,
-                    error: { hasError: true, message },
-                },
-            });
-        }
+        // if (message) {
+        //     dispatch({
+        //         type: ActionTypes.RESET_STATE,
+        //         payload: {
+        //             loading: false,
+        //             error: { hasError: true, message },
+        //         },
+        //     });
+        // }
     }
 
     return (
