@@ -3,15 +3,11 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./theme-provider";
 import { FloatingNav, Loader } from "@/components/index";
-import { GoogleAnalytics } from "@next/third-parties/google";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  // metadataBase: new URL(process.env.NEXT_PUBLIC_CURRENT_SITE_URL as string), 
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -21,7 +17,7 @@ export const metadata: Metadata = {
       "Explore the portfolio of Muhammad Ahmed based in Himachal Pradesh, a skilled React/Next.js Developer. Discover expertise in ReactJS, NextJS, Redux, Material UI, and TailwindCSS showcased through innovative web development projects.",
     images: [
       {
-        url: "/og-image.webp",
+        url: "https://res.cloudinary.com/durstxroh/image/upload/v1738261904/mbzw9citnwhll1tpg47r.jpg",
         alt: "Muhammad Ahmed | React/Next.js Developer based in Karachi , Pakistan",
       },
     ],
@@ -57,9 +53,6 @@ export default function RootLayout({
             <FloatingNav />
           </main>
         </ThemeProvider>
-        <Analytics />
-        <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_ID as string} />
-        <SpeedInsights />
       </body>
     </html>
   );
