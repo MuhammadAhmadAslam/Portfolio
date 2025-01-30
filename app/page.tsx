@@ -120,15 +120,17 @@ export default async function page() {
     ],
     "projects": [
       {
-        "title": "WhatsApp Clone",
-        "description": "A real-time chat application with private messaging, media sharing, and status updates.",
+        "title": "Learning Management System",
+        "description": "An intuitive platform designed to streamline the management and delivery of educational content. This system facilitates seamless course creation, assignment submissions, and student-teacher interaction, making it easier for institutions to track progress, manage content, and enhance the learning experience.",
         "images": [
-          "https://example.com/whatsapp-clone-1.jpg",
-          "https://example.com/whatsapp-clone-2.jpg"
+          "https://res.cloudinary.com/durstxroh/image/upload/v1738266615/qgzeq3ispks3yelmabkm.png",
+          "https://res.cloudinary.com/durstxroh/image/upload/v1738266615/qgzeq3ispks3yelmabkm.png",
+          "https://res.cloudinary.com/durstxroh/image/upload/v1738266775/khoy1rztqttzlgu457al.png",
+          "https://res.cloudinary.com/durstxroh/image/upload/v1738266833/me5wchetfviuhzvix3jc.png"
         ],
-        "techStack": ["React Native", "Node.js", "Express", "MongoDB"],
-        "liveUrl": "https://whatsapp-clone.example.com",
-        "gitUrl": "https://github.com/ahmed/whatsapp-clone",
+        "techStack": ["ReactJS", "Node.js", "Express", "MongoDB", "NextJS", "Tailwind", "Shadcn"],
+        "liveUrl": "https://saylani-management-system.vercel.app/",
+        "gitUrl": "https://github.com/MuhammadAhmadAslam/Saylani-Management-Systems",
         "priority": 1
       },
       {

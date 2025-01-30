@@ -12,7 +12,7 @@ Welcome to my official portfolio! As a passionate full-stack developer, this web
 ## 💻 Technologies Used:
 - **Frontend**: React, HTML, CSS, JavaScript
 - **Backend**: Node.js, Express, MongoDB
-- **Tools**: Git, GitHub, Docker, Vercel
+- **Tools**: Git, GitHub, Vercel
 
 ## 🛠 Setup & Installation:
 
@@ -37,7 +37,7 @@ Welcome to my official portfolio! As a passionate full-stack developer, this web
     ```
 
 ## 🌐 Deployment:
-This website is live on [Vercel](https://vercel.com). Check it out here: [Portfolio Website](https://your-vercel-deployment-link)
+This website is live on [Vercel](https://vercel.com). Check it out here: [Portfolio Website](https://ahmed-portfolio-sable.vercel.app/)
 
 ## 📬 Contact:
 Let's connect for collaboration or project inquiries.
