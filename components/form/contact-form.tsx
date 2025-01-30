@@ -138,7 +138,7 @@ export function ContactForm({ className, currentEmail }: Props) {
                 <Label htmlFor="name">Name</Label>
                 <Input
                     id="name"
-                    placeholder="Abhishek Bhardwaj"
+                    placeholder="Muhammad Ahmed"
                     type="text"
                     value={state.name}
                     onChange={handleInputChange}
@@ -148,7 +148,7 @@ export function ContactForm({ className, currentEmail }: Props) {
                 <Label htmlFor="email">Email</Label>
                 <Input
                     id="email"
-                    placeholder="hello@imabhishek.online"
+                    placeholder="muhammadahmedaslamofficial@gmail.com"
                     type="email"
                     value={state.email}
                     onChange={handleInputChange}

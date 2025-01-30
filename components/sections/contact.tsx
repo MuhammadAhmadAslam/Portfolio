@@ -2,7 +2,7 @@ import { Container } from "../container";
 import { MotionUp } from "../animations";
 import { SmallGridBackground } from "../bg-patterns";
 import { ContactForm } from "../form";
-import { FaGithub, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaInstagram, FaLinkedinIn, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import { Heading } from "../";
 import { PersonalInfo, SocialLink } from "@/lib/types";
@@ -21,6 +21,10 @@ const getSocialIcons = (title: string) => {
             return <FaTwitter size={30} />;
         case "Instagram":
             return <FaInstagram size={30} />;
+        case "Facebook":
+            return <FaFacebook size={30} />
+        case "Whatsapp":
+            return <FaWhatsapp  size={30} />
         default:
             return <FaLinkedinIn size={30} />;
     }
@@ -34,6 +38,8 @@ const getIconColors = (title: string) => {
             return "text-blue-500 hover:text-blue-700";
         case "Instagram":
             return "text-pink-500 hover:text-pink-700";
+        case "Whatsapp":
+            return "text-green-500 hover:text-green-700";
         default:
             return "text-blue-500 hover:text-blue-700";
     }
@@ -59,7 +65,7 @@ export function Contact({ personalInfo, socialLinks }: Props) {
                             <div className="relative flex flex-wrap justify-center items-center w-full shadow-md">
                                 <div className="w-full px-6">
                                     <h6 className="text-blue-100 italic font-bold text-xl uppercase">
-                                        believe in <span className="text-purple">Karma</span>
+                                    Building success with integrity, guided by faith, <span className="text-purple">and inspired by the power of good deeds</span>
                                     </h6>
                                 </div>
 
@@ -69,7 +75,7 @@ export function Contact({ personalInfo, socialLinks }: Props) {
                                     </h6>
                                     <a
                                         href={`mailto:${personalInfo.email}`}
-                                        className="text-blue-100 leading-relaxed"
+                                        className="text-blue-100 text-xs"
                                     >
                                         {personalInfo.email}
                                     </a>

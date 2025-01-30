@@ -16,22 +16,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     title:
-      "Abhishek Bhardwaj | React/Next.js Developer based in Himachal Pradesh, India",
+      "Muhammad Ahmed | React/Next.js Developer based in Karachi, Pakistan",
     description:
-      "Explore the portfolio of Abhishek Bhardwaj based in Himachal Pradesh, a skilled React/Next.js Developer. Discover expertise in ReactJS, NextJS, Redux, Material UI, and TailwindCSS showcased through innovative web development projects.",
+      "Explore the portfolio of Muhammad Ahmed based in Himachal Pradesh, a skilled React/Next.js Developer. Discover expertise in ReactJS, NextJS, Redux, Material UI, and TailwindCSS showcased through innovative web development projects.",
     images: [
       {
         url: "/og-image.webp",
-        alt: "Abhishek Bhardwaj | React/Next.js Developer based in Himachal Pradesh, India",
+        alt: "Muhammad Ahmed | React/Next.js Developer based in Karachi , Pakistan",
       },
     ],
   },
   title:
-    "Abhishek Bhardwaj | React/Next.js Developer based in Himachal Pradesh, India",
+    "Muhammad Ahmed | React/Next.js Developer based in Karachi , Pakistan",
   description:
-    "Explore the portfolio of Abhishek Bhardwaj based in Himachal Pradesh, a skilled React/Next.js Developer. Discover expertise in ReactJS, NextJS, Redux, Material UI, and TailwindCSS showcased through innovative web development projects.",
+    "Explore the portfolio of Muhammad Ahmed based in Himachal Pradesh, a skilled React/Next.js Developer. Discover expertise in ReactJS, NextJS, Redux, Material UI, and TailwindCSS showcased through innovative web development projects.",
   keywords:
-    "Abhishek Bhardwaj, ReactJS Developer, NextJS Developer, ReactJS, NextJS, Redux, Material UI, TailwindCSS, Web Development, Portfolio, React developer, Next js developer, Himachal Pradesh, India",
+    "Muhammad Ahmed, ReactJS Developer, NextJS Developer, ReactJS, NextJS, Redux, Material UI, TailwindCSS, Web Development, Portfolio, React developer, Next js developer, Karachi , Pakistan",
   robots:
     "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   icons: {

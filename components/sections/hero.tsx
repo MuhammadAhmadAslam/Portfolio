@@ -82,7 +82,7 @@ export function Hero({ data }: Props) {
                 ))}
                 <TextAppearAnimation
                   className="text-white italic font-semibold text-xl mt-5 uppercase animate-pulse"
-                  text="Strongly believe in Karma"
+                  text="Building success with integrity guided by faith, and inspired by the power of good deeds"
                 />
               </div>
 
@@ -90,9 +90,9 @@ export function Hero({ data }: Props) {
                 <Image
                   src={data.profileImage}
                   width={400}
-                  height={400}
+                  height={1000}
                   alt={data.name}
-                  className="rounded-lg aspect-square overflow-hidden max-w-full"
+                  className="rounded-lg  overflow-hidden max-w-full"
                 />
               </div>
             </div>

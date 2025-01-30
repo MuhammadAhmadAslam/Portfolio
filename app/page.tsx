@@ -22,10 +22,10 @@ export default async function page() {
       "email": "muhammadahmedaslamofficial@gmail.com",
       "address": "Karachi, Pakistan",
       "position": "Full Stack Developer",
-      "resume": "https://example.com/resume.pdf",
-      "profileImage": "https://media.licdn.com/dms/image/v2/D4E35AQE9lxrWBHOfRg/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1712362003631?e=1738864800&v=beta&t=yP4HcVsMhpbVsHvYDFWUJKwzR916zWxWahv8YLw0UyI",
+      "resume": "https://indigo-joye-52.tiiny.site/",
+      "profileImage": "https://res.cloudinary.com/durstxroh/image/upload/v1738261904/mbzw9citnwhll1tpg47r.jpg",
       "setupImage": "https://cdn.sanity.io/images/y178r8ab/production/fae1fdb810ce1939fd9af8f4f0cd07c495648ae2-1920x1440.webp",
-      "moreInfo": "A passionate full stack developer with experience in web and mobile app development. Specialized in MERN stack, React Native, and creating innovative solutions.",
+      "moreInfo": "I’m Muhammad Ahmed, a dedicated full-stack developer with a passion for crafting innovative web solutions. My journey began at a young age, and I’ve since mastered technologies like React, Node.js, and MongoDB to build scalable applications. I thrive on challenges, constantly learning and applying new skills to stay ahead in a fast-paced tech landscape. With a focus on delivering high-quality, user-centric products, my aim is to create software that not only meets but exceeds expectations. Code is like humor. When you have to explain it, it bad.",
       "workingHours": "Monday - Saturday: 9 AM - 5 PM"
     },
     "socialLinks": [
@@ -42,6 +42,11 @@ export default async function page() {
       {
         "title": "Facebook",
         "url": "https://www.facebook.com/ahmedaslamofficial",
+        "priority": 3
+      },
+      {
+        "title": "Whatsapp",
+        "url": "https://wa.me/923362905320?text=I%27m%20intrested%20to%20buy%20your%20services",
         "priority": 3
       }
     ],
@@ -140,24 +145,52 @@ export default async function page() {
     ],
     "testimonials": [
       {
-        "authorName": "Bilal Raza",
-        "authorImage": "https://example.com/bilal-raza.jpg",
-        "companyName": "SMIT",
-        "companyUrl": "https://smit.com",
-        "position": "Mentor",
+        "authorName": "Hassan Raza",
+        "authorImage": "https://res.cloudinary.com/durstxroh/image/upload/v1738264164/ymye5jpue0ppqivxhqpp.jpg",
+        "companyName": "Indivtiutal",
+        "companyUrl": "https://github.com/MuhammadHassanRaza25",
+        "position": "",
         "content": "Ahmed has consistently demonstrated exceptional problem-solving skills and a passion for developing innovative solutions.",
         "priority": 1
+      },
+      {
+        "authorName": "Cassius",
+        "authorImage": "https://img.freepik.com/free-photo/young-handsome-man-outside-autumn-park_1303-17306.jpg?t=st=1738264355~exp=1738267955~hmac=cb50fef4cfb1a5cc0d03acfd58208d27665943177e17b1d095867f7370d0d0db&w=740",
+        "companyName": "At Freelancing",
+        "companyUrl": "https://github.com/MuhammadHassanRaza25",
+        "position": "",
+        "content": "Ahmed has consistently demonstrated exceptional problem-solving skills and a passion for developing innovative solutions.",
+        "priority": 1
+      },
+      {
+        "authorName": "Zora",
+        "authorImage": "https://img.freepik.com/free-photo/portrait-handsome-male-entrepreneur-outside-office-building-suit-formal-business-attire-smiling_1303-13732.jpg?t=st=1738264355~exp=1738267955~hmac=cb50fef4cfb1a5cc0d03acfd58208d27665943177e17b1d095867f7370d0d0db&w=740",
+        "companyName": "Integral Technologists",
+        "companyUrl": "https://www.integraltechnologists.com",
+        "position": "",
+        "content": "Ahmed is an exceptional full-stack developer with a keen eye for detail and a strong drive for excellence. His work ethic and dedication are unmatched.",
+        "priority": 2
+      },
+      {
+        "authorName": "Elowen",
+        "authorImage": "https://img.freepik.com/free-photo/female-entrepreneur-successful-young-woman-working-office_1303-12372.jpg?t=st=1738264355~exp=1738267955~hmac=cb50fef4cfb1a5cc0d03acfd58208d27665943177e17b1d095867f7370d0d0db&w=740",
+        "companyName": "Tech Innovators",
+        "companyUrl": "https://www.techinnovators.com",
+        "position": "",
+        "content": "Working with Ahmed has been an incredible experience. His creativity, problem-solving abilities, and dedication to delivering high-quality results set him apart.",
+        "priority": 3
       }
+
     ],
     "certificates": [
       {
         "title": "MERN Stack Development",
-        "image": "https://example.com/mern-certificate.jpg",
+        "image": "https://res.cloudinary.com/durstxroh/image/upload/v1738262605/pgolhnkpjkkx9rx1ozip.png",
         "url": "https://example.com/mern-certificate"
       },
       {
         "title": "React Native Mastery",
-        "image": "https://example.com/react-native-certificate.jpg",
+        "image": "https://res.cloudinary.com/durstxroh/image/upload/v1738262605/vb4oyrkyufcsyo0cvekb.png",
         "url": "https://example.com/react-native-certificate"
       }
     ]
