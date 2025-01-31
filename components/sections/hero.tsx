@@ -21,7 +21,7 @@ export function Hero({ data }: Props) {
         <div className="flex flex-col items-center justify-center w-full">
           <MotionUp delay={0}>
             <h1 className="text-3xl  md:text-6xl text-neutral-700 dark:text-blue-100 !leading-snug text-center mx-auto font-[900]">
-              Hi, I'm Muhammad Ahmad, a Full Stack
+              Hi, I'm Muhammad Ahmad, A
               <br />
               <Highlight delay={1.8}>{data.position}</Highlight>
             </h1>

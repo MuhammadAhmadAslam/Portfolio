@@ -68,6 +68,11 @@ export default async function page() {
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
       },
       {
+        "name": "TypeScript",
+        "image": "https://www.svgrepo.com/show/303600/typescript-logo.svg",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+      },
+      {
         "name": "React",
         "image": "https://miro.medium.com/v2/resize:fit:1400/0*OLBBmwZWiKUNk685.png",
         "url": "https://reactjs.org"
@@ -134,16 +139,48 @@ export default async function page() {
         "priority": 1
       },
       {
-        "title": "Microfinance App",
-        "description": "A fintech application for microloans and financial management, built during a hackathon.",
+        "title": "Real Time Chat Application Clone Of Whatsapp",
+        "description": "An advanced real-time chat application developed using ReactJS and Firebase, designed for seamless one-on-one private conversations. This feature-packed app allows users to exchange text messages, share photos instantly, and engage in AI-powered conversations for an enhanced chat experience. With end-to-end encryption ensuring privacy, the platform offers a fast, secure, and interactive way to connect. Perfectly tailored for modern communication, it delivers innovation and reliability in every chat.",
         "images": [
-          "https://example.com/microfinance-app-1.jpg"
+          "https://res.cloudinary.com/durstxroh/image/upload/v1738328085/whatsapp_jhrxg1.png",
+          "https://res.cloudinary.com/durstxroh/image/upload/v1738328086/whatsapp2_hmhujq.png",
+          "https://res.cloudinary.com/durstxroh/image/upload/v1738328086/whatsapp3_alb9ji.png"
         ],
-        "techStack": ["React", "Firebase", "Bootstrap"],
-        "liveUrl": "https://microfinance.example.com",
-        "gitUrl": "https://github.com/ahmed/microfinance-app",
+        "techStack": ["React", "Firebase", "Tailwind", "NextJS", "JavaScript"],
+        "liveUrl": "https://ahmed-chat-app.vercel.app/",
+        "gitUrl": "https://github.com/MuhammadAhmadAslam/Chat-App",
         "priority": 2
-      }
+      },
+      {
+        "title": "Dynamic E-Commerce Platform with Advanced Admin Panel & Real-Time Tracking",
+        "description": "An innovative e-commerce solution developed using ReactJS, Firebase, and Node.js, designed to deliver a seamless shopping experience. This platform features a powerful admin panel for effortless management of products, orders, user activities, locations, categories, and subcategories. Equipped with real-time tracking, the system ensures precise order management and operational efficiency. Its modern UI/UX, secure backend, and scalable architecture make it the perfect choice for businesses aiming to thrive in the digital marketplace.",
+        "images": [
+          "https://res.cloudinary.com/durstxroh/image/upload/v1738331715/ecommerce_xgx5fq.png",
+          "https://res.cloudinary.com/durstxroh/image/upload/v1738331714/ecommerce3_u5ziws.png",
+          "https://res.cloudinary.com/durstxroh/image/upload/v1738331714/adminpaenl_in0voe.png",
+          "https://res.cloudinary.com/durstxroh/image/upload/v1738331714/adminpanel3_lqjzz8.png",
+          "https://res.cloudinary.com/durstxroh/image/upload/v1738331714/ecommerce2_xadtmq.png",
+          "https://res.cloudinary.com/durstxroh/image/upload/v1738331727/ecommerce1_p3qjvo.png"
+        ],
+        "techStack": ["React", "Firebase", "Tailwind", "NextJS", "JavaScript"],
+        "liveUrl": "https://e-commerce-xi-ebon.vercel.app/",
+        "gitUrl": "https://github.com/MuhammadAhmadAslam/Proffesional-E-Commerce-Website",
+        "priority": 3
+      },
+      {
+        "title": "WebGlowing: Your Ultimate Developer Tool Hub",
+        "description": "WebGlowing.com is a collaborative project designed to empower developers and creators with a suite of powerful tools for seamless web development. From generating stunning box shadows and text shadows to crafting perfect border-radius styles, our platform simplifies your design process. Additional features include a QR code generator, text-to-speech functionality, and a CSS border generator, making WebGlowing your one-stop destination for boosting creativity and productivity. Explore, create, and glow with WebGlowing!",
+        "images": [
+          "https://res.cloudinary.com/durstxroh/image/upload/v1738332395/clpjk3hiym7xldinjvmm.png",
+          "https://res.cloudinary.com/durstxroh/image/upload/v1738332394/o0fozk32d1goq4tyfqja.png",
+          "https://res.cloudinary.com/durstxroh/image/upload/v1738332395/eppjtjvv0fqd2ui7vj1m.png",
+          "https://res.cloudinary.com/durstxroh/image/upload/v1738332398/ykrgo8e23iybznt8bivt.png"
+        ],
+        "techStack": ["React", "Firebase", "Tailwind", "NextJS", "JavaScript","CSS","HTML5"],
+        "liveUrl": "https://webglowing.com/",
+        "gitUrl": "https://webglowing.com/",
+        "priority": 4
+      },
     ],
     "testimonials": [
       {
