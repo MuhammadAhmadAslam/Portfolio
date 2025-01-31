@@ -12,20 +12,20 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     title:
-      "Muhammad Ahmed | React/Next.js Developer based in Karachi, Pakistan",
+      "Muhammad Ahmed | fFull Stack Developer based in Karachi, Pakistan",
     description:
-      "Explore the portfolio of Muhammad Ahmed based in Himachal Pradesh, a skilled React/Next.js Developer. Discover expertise in ReactJS, NextJS, Redux, Material UI, and TailwindCSS showcased through innovative web development projects.",
+      "Explore the portfolio of Muhammad Ahmed based in Karachi , Pakistan, a skilled Full Stack Developer. Discover expertise in ReactJS, NextJS, Redux, Material UI, and TailwindCSS showcased through innovative web development projects.",
     images: [
       {
         url: "https://res.cloudinary.com/durstxroh/image/upload/v1738261904/mbzw9citnwhll1tpg47r.jpg",
-        alt: "Muhammad Ahmed | React/Next.js Developer based in Karachi , Pakistan",
+        alt: "Muhammad Ahmed | Full Stack Developer based in Karachi , Pakistan",
       },
     ],
   },
   title:
-    "Muhammad Ahmed | React/Next.js Developer based in Karachi , Pakistan",
+    "Muhammad Ahmed | Full Stack Developer based in Karachi , Pakistan",
   description:
-    "Explore the portfolio of Muhammad Ahmed based in Karachi Pakistan, a skilled React/Next.js Developer. Discover expertise in ReactJS, NextJS, Redux, Material UI, and TailwindCSS showcased through innovative web development projects.",
+    "Explore the portfolio of Muhammad Ahmed based in Karachi Pakistan, a skilled Full Stack Developer. Discover expertise in ReactJS, NextJS, Redux, Material UI, and TailwindCSS showcased through innovative web development projects.",
   keywords:
     "Muhammad Ahmed, Ahmed Aslam Portolio , Proffesional Portfolio ,ReactJS Developer, NextJS Developer, ReactJS, NextJS, Redux, Material UI, TailwindCSS, Web Development, Portfolio, React developer, Next js developer, Karachi , Pakistan , NodeJS , ExpressJS , SMIT , Saylani Mass IT Training Program , SMIT Almuni , Senior Web Developer , Full Stack Developer , MERN Stack Developer ,",
   robots:
