@@ -108,7 +108,7 @@ export function ExperienceSkills({ experiences, skills, certificates }: Props) {
                                         alt={certificate.title}
                                         width={1280}
                                         height={720}
-                                        className="w-full max-h-[500px] aspect-square rounded"
+                                        className="w-full max-h-[500px] object-contain aspect-square rounded"
                                     />
                                 </a>
                             ))}

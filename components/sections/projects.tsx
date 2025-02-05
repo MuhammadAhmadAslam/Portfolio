@@ -122,7 +122,7 @@ export function Projects({ projects }: Props) {
                                         alt={modalData.title}
                                         height={500}
                                         width={500}
-                                        className="rounded-lg w-full  max-h-48 cursor-pointer aspect-video object-cover"
+                                        className="rounded-lg w-full  max-h-48 cursor-pointer aspect-video object-contain"
                                     />
                                 </Link>
                             ))}
