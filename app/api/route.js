@@ -25,7 +25,7 @@ export async function POST(req) {
             from: process.env.EMAIL_USER,
             to,
             subject,
-            text: message, // Use "html" key for HTML emails
+            text: message, 
         };
 
         // Send email
