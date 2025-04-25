@@ -83,49 +83,101 @@ export function ContactForm({ className, currentEmail }: Props) {
         );
     }
 
+    // async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    //     e.preventDefault();
+    //     if (state.loading || sent) return;
+
+    //     if (!isFormValid()) {
+    //         return dispatch({
+    //             type: ActionTypes.UPDATE_STATE,
+    //             payload: {
+    //                 error: { hasError: true, message: "Pleae fill all fields!" },
+    //             },
+    //         });
+    //     }
+
+    //     dispatch({
+    //         type: ActionTypes.UPDATE_STATE,
+    //         payload: { loading: true, error: { hasError: false, message: "" } },
+    //     });
+
+    //     // const { success, message } = await sendMail({
+    //     //     ...state,
+    //     //     currentEmail,
+    //     // });
+
+    //     // const { success, message } = ["true",false]
+    //     // if (success) {
+    //     //     setSent(true);
+    //     //     dispatch({
+    //     //         type: ActionTypes.RESET_STATE,
+    //     //         payload: initialInputState,
+    //     //     });
+    //     // }
+
+    //     // if (message) {
+    //     //     dispatch({
+    //     //         type: ActionTypes.RESET_STATE,
+    //     //         payload: {
+    //     //             loading: false,
+    //     //             error: { hasError: true, message },
+    //     //         },
+    //     //     });
+    //     // }
+    // }
+
+
+
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
         if (state.loading || sent) return;
-
+    
         if (!isFormValid()) {
             return dispatch({
                 type: ActionTypes.UPDATE_STATE,
                 payload: {
-                    error: { hasError: true, message: "Pleae fill all fields!" },
+                    error: { hasError: true, message: "Please fill all fields!" },
                 },
             });
         }
-
+    
         dispatch({
             type: ActionTypes.UPDATE_STATE,
             payload: { loading: true, error: { hasError: false, message: "" } },
         });
-
-        // const { success, message } = await sendMail({
-        //     ...state,
-        //     currentEmail,
-        // });
-
-        // const { success, message } = ["true",false]
-        // if (success) {
-        //     setSent(true);
-        //     dispatch({
-        //         type: ActionTypes.RESET_STATE,
-        //         payload: initialInputState,
-        //     });
-        // }
-
-        // if (message) {
-        //     dispatch({
-        //         type: ActionTypes.RESET_STATE,
-        //         payload: {
-        //             loading: false,
-        //             error: { hasError: true, message },
-        //         },
-        //     });
-        // }
+    
+        try {
+            const response = await fetch("/api/email", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ ...state, currentEmail }),
+            });
+    
+            const data = await response.json();
+            console.log("this is the data ===>", data);
+            
+            if (data.success) {
+                setSent(true);
+                dispatch({
+                    type: ActionTypes.RESET_STATE,
+                    payload: initialInputState,
+                });
+            } else {
+                throw new Error(data.message || "Something went wrong!");
+            }
+        } catch (error: any) {
+            dispatch({
+                type: ActionTypes.UPDATE_STATE,
+                payload: {
+                    loading: false,
+                    error: { hasError: true, message: error.message },
+                },
+            });
+        }
     }
-
+    
     return (
         <form
             className={`relative ${className}`}
