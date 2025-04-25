@@ -90,9 +90,9 @@ export function Hero({ data }: Props) {
                 <Image
                   src={data.profileImage}
                   width={400}
-                  height={1000}
+                  height={5500}
                   alt={data.name}
-                  className="rounded-lg  overflow-hidden max-w-full"
+                  className="rounded-lg object-cover  overflow-hidden max-w-full"
                 />
               </div>
             </div>
