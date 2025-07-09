@@ -76,11 +76,11 @@ export async function POST(req) {
                 <p class="overview-title">Explore Some of My Recent Work:</p>
                 <div class="project-item">
                     <p class="project-title">Realtime Chat Application</p>
-                    <a href="https://github.com/MuhammadAhmadAslam/Chat-App" class="project-link" target="_blank">View on GitHub <img src="https://img.icons8.com/material-outlined/16/000000/github.png" alt="GitHub"></a>
+                    <a href="https://github.com/MuhammadAhmadAslam/Chat-App" rel="noopener" class="project-link" target="_blank">View on GitHub <img src="https://img.icons8.com/material-outlined/16/000000/github.png" alt="GitHub"></a>
                 </div>
                 <div class="project-item">
                     <p class="project-title">All Website Projects Collection</p>
-                    <a href="https://github.com/MuhammadAhmadAslam/All-Websites-Project" class="project-link" target="_blank">View on GitHub <img src="https://img.icons8.com/material-outlined/16/000000/github.png" alt="GitHub"></a>
+                    <a href="https://github.com/MuhammadAhmadAslam/All-Websites-Project" rel="noopener" class="project-link" target="_blank">View on GitHub <img src="https://img.icons8.com/material-outlined/16/000000/github.png" alt="GitHub"></a>
                 </div>
                 <div class="project-item">
                     <p class="project-title">Saylani Management System (LMS & CRM)</p>
@@ -97,7 +97,7 @@ export async function POST(req) {
                 <ul class="social-links">
                     <li><a href="https://www.facebook.com/ahmedaslamofficial" target="_blank"><img src="https://img.icons8.com/fluent/30/2962ff/facebook-new.png" alt="Facebook"></a></li>
                     <li><a href="https://www.instagram.com/m_ahmed_Dev" target="_blank"><img src="https://img.icons8.com/fluent/30/e1306c/instagram-new.png" alt="Instagram"></a></li>
-                    <li><a href="https://github.com/MuhammadAhmadAslam" target="_blank"><img src="https://img.icons8.com/fluent/30/24292e/github.png" alt="GitHub"></a></li>
+                    <li><a href="https://github.com/MuhammadAhmadAslam"  rel="noopener" target="_blank"><img src="https://img.icons8.com/fluent/30/24292e/github.png" alt="GitHub"></a></li>
                     <li><a href="https://www.linkedin.com/in/muhammad-ahmed-b7b8452b6/" target="_blank"><img src="https://img.icons8.com/fluent/30/0077b5/linkedin.png" alt="LinkedIn"></a></li>
                 </ul>
                 <div class="contact-info">

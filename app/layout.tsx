@@ -4,34 +4,40 @@ import "./globals.css";
 import { ThemeProvider } from "./theme-provider";
 import { FloatingNav, Loader } from "@/components/index";
 import { Suspense } from "react";
-
+import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  title: "Muhammad Ahmed | Full Stack & MERN Stack Developer Karachi, Pakistan",
+  description:
+    "Muhammad Ahmed - Professional MERN Stack Developer & Full Stack Engineer based in Karachi, Pakistan. Building high-quality web applications using ReactJS, NextJS, NodeJS, Express, MongoDB, Redux, Material UI, and TailwindCSS.",
+  keywords:
+    "Muhammad Ahmed, Muhammad Ahmed Aslam, Full Stack Developer Karachi, MERN Stack Developer Karachi, ReactJS Developer Pakistan, NextJS Developer Pakistan, NodeJS Developer, ExpressJS Developer, SMIT Alumni, Saylani Mass IT Training, Integral Technologists, Software Engineer, Frontend Developer, Backend Developer, Web Designer, UI/UX Developer, Hire Developer Karachi, Developer Portfolio, Developer Resume, Full Stack Portfolio",
+  authors: [{ name: "Muhammad Ahmed", url: "https://mahmedportfolio.vercel.app/" }],
+  robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   openGraph: {
     type: "website",
     locale: "en_US",
-    title:
-      "Muhammad Ahmed | fFull Stack Developer based in Karachi, Pakistan",
+    url: "https://mahmedportfolio.vercel.app/",
+    title: "Muhammad Ahmed | Full Stack Developer Karachi, Pakistan",
     description:
-      "Explore the portfolio of Muhammad Ahmed based in Karachi , Pakistan, a skilled Full Stack Developer. Discover expertise in ReactJS, NextJS, Redux, Material UI, and TailwindCSS showcased through innovative web development projects.",
+      "Professional MERN Stack Developer & Full Stack Engineer from Karachi, Pakistan. Expert in React, Next.js, Node.js, Express, MongoDB & modern web technologies.",
     images: [
       {
         url: "https://res.cloudinary.com/durstxroh/image/upload/v1738261904/mbzw9citnwhll1tpg47r.jpg",
-        alt: "Muhammad Ahmed | Full Stack Developer based in Karachi , Pakistan",
+        alt: "Muhammad Ahmed | Full Stack Developer Portfolio",
       },
     ],
   },
-  title:
-    "Muhammad Ahmed | Full Stack Developer based in Karachi , Pakistan",
-  description:
-    "Explore the portfolio of Muhammad Ahmed based in Karachi Pakistan, a skilled Full Stack Developer. Discover expertise in ReactJS, NextJS, Redux, Material UI, and TailwindCSS showcased through innovative web development projects.",
-  keywords:
-    "Muhammad Ahmed, Ahmed Aslam Portolio , Proffesional Portfolio ,ReactJS Developer, NextJS Developer, ReactJS, NextJS, Redux, Material UI, TailwindCSS, Web Development, Portfolio, React developer, Next js developer, Karachi , Pakistan , NodeJS , ExpressJS , SMIT , Saylani Mass IT Training Program , SMIT Almuni , Senior Web Developer , Full Stack Developer , MERN Stack Developer , MERN Stack , Software Engineer , Software Development, Web Development, Frontend Developer, Backend Developer , Web Designer, UI/UX Designer, UI/UX Developer, UI/UX Engineer, UI/UX Design, UI/UX Development, UI/UX Engineering , UI/UX Portfolio, UI/UX Projects, UI/UX Case Studies, UI/UX Research, UI/UX Testing, UI/UX Prototyping, UI/UX Wireframing, UI/UX Mockups, UI/UX Design Systems, UI/UX Design Patterns, UI/UX Design Principles, UI/UX Design Process , LMS , Developer Portfolio , Software Engineer Portfolio , Software Engineer Projects , Software Engineer Case Studies , Software Engineer Research , Software Engineer Testing , Software Engineer Prototyping , Software Engineer Wireframing , Software Engineer Mockups , Software Engineer Design Systems, Software Engineer Design Patterns, Software Engineer Design Principles, Software Engineer Design Process",
-  authors: [{ name: "Muhammad Ahmed", url: "https://ahmed-portfolio-sable.vercel.app/" }],
-  robots:
-    "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+  twitter: {
+    card: "summary_large_image",
+    title: "Muhammad Ahmed | Full Stack Developer",
+    description:
+      "Hire Muhammad Ahmed — Full Stack Developer & MERN Stack Specialist in Karachi, Pakistan. Building robust, scalable web apps.",
+    images: ["https://res.cloudinary.com/durstxroh/image/upload/v1738261904/mbzw9citnwhll1tpg47r.jpg"],
+  },
 };
+
 
 export const revalidate = Number(process.env.REVALIDATE_INTERVAL) || 600;
 
@@ -42,6 +48,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Head>
+        <meta name="author" content="Muhammad Ahmed" />
+        <link rel="canonical" href="https://mahmedportfolio.vercel.app/" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="_q9tsAXyZ8Vq4579CGrRpFR35f71c91XvPt_POyQlTs" />
+      </Head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
