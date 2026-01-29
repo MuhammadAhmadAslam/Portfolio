@@ -12,6 +12,7 @@ const nextConfig = {
           { hostname: 'encrypted-tbn0.gstatic.com' },
           { hostname: 'cdn.worldvectorlogo.com' },
           { hostname: 'res.cloudinary.com' },
+          { hostname: 'www.12monday.net' },
         ],
       },
 };
