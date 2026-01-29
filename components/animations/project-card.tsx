@@ -25,24 +25,48 @@ export function ProjectCard({ data }: Props) {
       onClick={handleSetModalContent}
       className="!w-full flex justify-center h-[360px]"
     >
-      <div className="tracking-tight text-blue-100">
-        <Image
-          src={data.images[0]}
-          alt={data.title}
-          height={300}
-          width={500}
-          className="rounded-lg h-[180px] max-w-full mb-5"
-        />
-        <h3 className="line-clamp-1 max-w-xs !pb-2 !m-0 font-bold  text-base text-blue-100">
-          {data.title}
-        </h3>
-        <div className="text-base !m-0 !p-0 font-normal">
-          <p className="text-slate-400 line-clamp-4 ">{data.description}</p>
+      <div className="relative tracking-tight text-blue-100 flex flex-col h-full">
+        {/* Accent gradient */}
+        <span className="absolute top-0 left-0 h-[3px] w-full bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 rounded-full" />
+
+        {/* Content */}
+        <div className="pt-6 flex flex-col flex-1">
+          {/* Title */}
+          <h3 className="line-clamp-1 font-bold text-lg mb-2">
+            {data.title}
+          </h3>
+
+          {/* Description */}
+          <p className="text-sm text-slate-400 line-clamp-4 mb-4">
+            {data.description}
+          </p>
+
+          {/* Tech Stack */}
+          <div className="flex flex-wrap gap-2 mt-auto">
+            {data.techStack?.slice(0, 5).map((tech) => (
+              <span
+                key={tech}
+                className="text-xs px-3 py-1 rounded-full
+                           bg-slate-800/70 text-blue-100"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Footer CTA */}
+        <div className="mt-5 flex items-center justify-between text-sm text-purple-400">
+          <span className="opacity-70">View project</span>
+          <span className="transition-transform group-hover/pin:translate-x-1">
+            →
+          </span>
         </div>
       </div>
     </PinContainer>
   );
 }
+
 
 function PinContainer({
   children,

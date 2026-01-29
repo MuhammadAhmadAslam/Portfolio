@@ -64,69 +64,67 @@ export function Projects({ projects }: Props) {
 
             <Modal>
                 <ModalBody className="!max-w-[700px]">
-                    <ModalContent className="mt-5">
-                        <div className="mb-5 flex items-center flex-wrap gap-x-5 gap-y-2">
-                            <h5 className="text-xl font-semibold text-blue-100">
-                                {modalData?.title}
-                            </h5>
-                            <div className="flex gap-4 items-center">
-                                {modalData?.liveUrl && (
-                                    <Link
-                                        href={modalData?.liveUrl}
-                                        target="_blank"
-                                        className="flex justify-center items-center text-purple"
-                                    >
-                                        <FaEye className="me-1" />
-                                        <span className="text-[15px]">Check Live Site</span>
-                                    </Link>
-                                )}
-                                {modalData?.gitUrl && (
-                                    <Link
-                                        href={modalData?.gitUrl}
-                                        target="_blank"
-                                        className="flex justify-center items-center text-purple"
-                                    >
-                                        <FaGithub className="me-1" />
-                                        <span className="relative top-[1px] text-[15px]">
-                                            Get code
-                                        </span>
-                                    </Link>
-                                )}
+                    <ModalContent className="mt-5 space-y-6">
+
+                        {/* Header */}
+                        <div className="relative rounded-xl border border-white/10
+                      bg-gradient-to-br from-slate-900 via-slate-950 to-black p-5">
+                            <span className="absolute inset-x-0 top-0 h-[3px]
+                         bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 rounded-full" />
+
+                            <div className="flex flex-wrap items-center gap-4 justify-between">
+                                <h5 className="text-xl font-semibold text-blue-100">
+                                    {modalData?.title}
+                                </h5>
+
+                                <div className="flex gap-4">
+                                    {modalData?.liveUrl && (
+                                        <Link
+                                            href={modalData.liveUrl}
+                                            target="_blank"
+                                            className="flex items-center text-purple text-sm"
+                                        >
+                                            <FaEye className="me-1" /> Live
+                                        </Link>
+                                    )}
+                                    {modalData?.gitUrl && (
+                                        <Link
+                                            href={modalData.gitUrl}
+                                            target="_blank"
+                                            className="flex items-center text-purple text-sm"
+                                        >
+                                            <FaGithub className="me-1" /> Code
+                                        </Link>
+                                    )}
+                                </div>
                             </div>
                         </div>
-                        <div className="border border-gray-700 border-opacity-75 p-4 rounded-lg mb-5">
+
+                        {/* Description */}
+                        <div className="border border-gray-700/70 rounded-lg p-4">
                             <p className="leading-relaxed text-sm text-blue-100">
                                 {modalData?.description}
                             </p>
                         </div>
-                        <div className="flex flex-wrap gap-3 mb-5">
-                            {modalData?.techStack?.map((item: string) => (
-                                <p
-                                    key={item}
-                                    className="bg-slate-800/50  px-5 py-2 text-sm text-blue-100 rounded-sm"
-                                >
-                                    {item}
-                                </p>
-                            ))}
+
+                        {/* Tech Stack */}
+                        <div>
+                            <h6 className="text-sm font-semibold text-blue-200 mb-3">
+                                Tech Stack
+                            </h6>
+                            <div className="flex flex-wrap gap-3">
+                                {modalData?.techStack?.map((item: string) => (
+                                    <span
+                                        key={item}
+                                        className="bg-slate-800/60 px-4 py-2 text-xs
+                         text-blue-100 rounded-full"
+                                    >
+                                        {item}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
-                        <div className="flex flex-wrap gap-x-2 gap-y-5 mb-5">
-                            {modalData?.images?.map((item) => (
-                                <Link
-                                    key={item}
-                                    className="w-full sm:w-[49%]"
-                                    href={item}
-                                    target="_blank"
-                                >
-                                    <Image
-                                        src={item}
-                                        alt={modalData.title}
-                                        height={500}
-                                        width={500}
-                                        className="rounded-lg w-full  max-h-48 cursor-pointer aspect-video object-contain"
-                                    />
-                                </Link>
-                            ))}
-                        </div>
+
                     </ModalContent>
                 </ModalBody>
             </Modal>
