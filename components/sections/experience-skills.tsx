@@ -6,12 +6,17 @@ import Marquee from "react-fast-marquee";
 import { Heading } from "../";
 import { WorkExperience, Skill, Certificate } from "@/lib/types";
 
+// function sortByStartDate(arr: WorkExperience[]): WorkExperience[] {
+//     return arr.toSorted(
+//         (a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime()
+//     );
+// }
 function sortByStartDate(arr: WorkExperience[]): WorkExperience[] {
-    return arr.toSorted(
+    // Create a copy using spread syntax to avoid mutating the original array
+    return [...arr].sort(
         (a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime()
     );
 }
-
 interface Props {
     experiences: WorkExperience[];
     skills: Skill[];
