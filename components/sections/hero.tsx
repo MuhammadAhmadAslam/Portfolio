@@ -28,13 +28,16 @@ export function Hero({ data }: Props) {
           </MotionUp>
 
           <MotionUp delay={0.3} className="my-4">
-            <h6 className="text-center !leading-7 md:!leading-10  font-semibold text-2 lg:text-3xl max-w-xl  text-blue-100 ">
+            <h6 className="text-center !leading-7 md:!leading-10 font-semibold text-2 lg:text-3xl max-w-xl text-blue-100">
               Based in {data.address},
               <br />
-              Specialized in <Highlight delay={1.8}>React</Highlight> and{" "}
-              <Highlight delay={1.8}>Next.js</Highlight>
+              Building{" "}
+              <Highlight delay={1.8}>Mobile Applications</Highlight>{" "}
+              with a strong{" "}
+              <Highlight delay={2.4}>Backend</Highlight>
             </h6>
           </MotionUp>
+
 
           <MotionUp delay={0.6} className="flex items-center gap-3 mt-5">
             <MagicButton
